@@ -56,6 +56,7 @@ a:focus {
   --subtle-text: #8e8f99;
   --accent: #e7e9fc;
   --light: #f4f4fd;
+  --modal-overlay: #2e2f42;
   --hero-background: rgba(46, 47, 66, 0.7);
   --white-background: #fff;
   --modal-background: #fcfcfc;
@@ -150,6 +151,45 @@ ul {
 .button-main:hover,
 .button-main:focus {
   background: var(--pressed-state, #404bbf);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: var(--modal-overlay);
+  opacity: 40%;
+  pointer-events: all;
+  visibility: visible;
+  transition: opacity 250ms;
+}
+
+.modal-body {
+  position: relative;
+  max-width: 408px;
+  min-height: 584px;
+  margin: auto;
+  background-color: var(--modal-background);
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+}
+
+.modal-close {
+  opacity: 1;
+  position: absolute;
+  inset: 24px 24px auto auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  fill: var(--accent);
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 nav {
@@ -359,7 +399,7 @@ nav {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-image:hover .portfolio-card-description {
+.portfolio-image-wrapper:hover .portfolio-card-description {
   translate: 0;
 }
 

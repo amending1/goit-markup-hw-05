@@ -56,7 +56,18 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
           <h1 class="main-order-service-text">
             Effective Solutions for Your Business
           </h1>
-          <button class="button-main" type="button">Order Service</button>
+          <button class="button-main" type="button" data-modal-open>
+            Order Service
+          </button>
+        </div>
+        <div class="modal is-hidden" data-modal>
+          <div class="modal-body">
+            <button data-modal-close>
+              <svg class="modal-close">
+                <use href="./images/icons.svg#icon-close-black"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -370,5 +381,6 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
