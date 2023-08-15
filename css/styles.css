@@ -154,7 +154,7 @@ ul {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -168,7 +168,7 @@ ul {
 .modal-body {
   position: relative;
   max-width: 408px;
-  min-height: 584px;
+  min-height: 100%;
   margin: auto;
   background-color: var(--modal-background);
   border-radius: 4px;
@@ -193,7 +193,7 @@ ul {
 .modal-close-icon-items {
   height: 8px;
   width: 8px;
-  color: var(--modal-overlay);
+  fill: var(--modal-overlay);
 }
 
 .is-hidden {
@@ -220,7 +220,6 @@ nav {
   color: var(--dark, #2e2f42);
   font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
@@ -235,7 +234,7 @@ nav {
   background-color: var(--pressed-state);
   height: 4px;
   width: 100%;
-  bottom: -20px;
+  bottom: -24px;
   left: 0px;
   border-radius: 2px;
   position: absolute;
@@ -368,6 +367,7 @@ nav {
 }
 
 .icon-media-round {
+  cursor: pointer;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -517,10 +517,13 @@ nav {
 
 .customers-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   column-gap: 24px;
 }
 
 .customers-items {
+  cursor: pointer;
   fill: var(--subtle-text, #8e8f99);
   width: 168px;
   height: 88px;
@@ -561,8 +564,8 @@ nav {
 }
 
 .footer-media-items {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   transition: 250ms;
   transition-timing-function: var(--tr-function);
 }
@@ -574,10 +577,13 @@ nav {
 
 .footer-media-icons {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 16px;
 }
 
 .icon-media-round-footer {
+  cursor: pointer;
   width: 40px;
   height: 40px;
   border-radius: 50%;
