@@ -375,6 +375,9 @@ nav {
   background-color: var(--primary-brand, #4d5ae5);
   transition: 250ms;
   transition-timing-function: var(--tr-function);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-media-round:hover,
@@ -384,8 +387,6 @@ nav {
 
 .main-team-media {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 24px;
 }
 
@@ -517,8 +518,6 @@ nav {
 
 .customers-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
   column-gap: 24px;
 }
 
@@ -577,8 +576,6 @@ nav {
 
 .footer-media-icons {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 16px;
 }
 
@@ -587,10 +584,12 @@ nav {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  padding: 12px;
   background-color: var(--primary-brand, #4d5ae5);
   transition: 250ms;
   transition-timing-function: var(--tr-function);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-media-round-footer:hover,
